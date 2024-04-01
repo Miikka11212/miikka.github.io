@@ -3,28 +3,70 @@
 <style>
 	.emailbutton {
 		color: rgb(66, 176, 255);
-		width: 130px;
-		height: 30px;
+		width: 160px;
+		height: 40px;
 		border: none;
 		background-color: bisque;
 		cursor: pointer;
         transition: background-color 1s;
         transition: color 1s;
         border-radius: 12px;
+		margin-left: 30px;
+		font-size: 22px;
         
 	}
     .emailbutton:hover{
         background-color: rgb(251, 183, 99);
         color: rgb(42, 152, 231);
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-
     }
+
+	header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+			font-size: 22px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+			font-size: 22px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+			font-size: 22px;
+        }
+
+		.text {
+			font-size: 22px;
+		}
 </style>
 <body>
-<div>
+
+<header>
     <h1>Miikka's Archive</h1>
-<p>this is my website</p>
-<a href = "https://steamcommunity.com/profiles/76561198358158601/" target = "_blank">link to my steam profile</a>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">My Photography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+<p class="text">Welcome to my website! It is still under construction and I am still trying to learn HTML.</p>
+<a href = "https://steamcommunity.com/profiles/76561198358158601/" target = "_blank" class="text">link to my steam profile</a>
 <a href = "mailto:oscar11212@miikkaarchive.com">
 	<button class="emailbutton">
 		Email Contact

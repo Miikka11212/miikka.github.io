@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    margin: 0;
+}
+
 .emailbutton {
     color: rgb(66, 176, 255);
     width: 160px;
@@ -47,8 +54,17 @@ nav ul li a {
 
 .text {
     font-size: 22px;
+    margin-left: 20px;
 }
 
 .headertext:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; 
 }

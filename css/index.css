@@ -1,9 +1,4 @@
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Set minimum height to fill the viewport */
-    margin: 0;
-}
+
 
 .emailbutton {
     color: rgb(66, 176, 255);
@@ -61,10 +56,30 @@ nav ul li a {
     text-decoration: underline;
 }
 
-footer {
+body {
+    margin: 0;
+    padding-bottom: 60px; /* Set padding bottom to accommodate footer height */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    position: relative;
+}
+
+header {
     background-color: #333;
     color: white;
     padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
     text-align: center;
-    margin-top: auto; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
